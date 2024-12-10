@@ -1,5 +1,5 @@
-pip install -r requirements.txt
+pip install django
 
-python manage.py runserver
+pip install openai
 
--> http://server_ip_adress/api/image/edit/
+pip install django-cors-headers
