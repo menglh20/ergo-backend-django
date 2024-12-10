@@ -1,0 +1,193 @@
+Watching for file changes with StatReloader
+[10/Dec/2024 07:54:00] "GET /api/image/hello HTTP/1.0" 200 5
+[10/Dec/2024 07:54:01] "GET /api/image/hello HTTP/1.0" 200 5
+[10/Dec/2024 07:54:02] "GET /api/image/hello HTTP/1.0" 200 5
+/root/imaigine/image/views.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+December 10, 2024 - 07:53:41
+Django version 5.1.3, using settings 'imaigine.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+
+Watching for file changes with StatReloader
+[10/Dec/2024 07:55:19] "GET /api/image/hello HTTP/1.0" 200 5
+Not Found: /favicon.ico
+[10/Dec/2024 07:55:19] "GET /favicon.ico HTTP/1.0" 404 2357
+[10/Dec/2024 07:55:36] "GET /api/image/hello HTTP/1.0" 200 5
+Not Found: /
+[10/Dec/2024 08:01:04] "GET / HTTP/1.0" 404 2306
+[10/Dec/2024 08:02:09] "GET /api/image/hello HTTP/1.0" 200 5
+[10/Dec/2024 08:02:10] "GET /api/image/hello HTTP/1.0" 200 5
+[10/Dec/2024 08:02:10] "GET /api/image/hello HTTP/1.0" 200 5
+Not Found: /webui/
+[10/Dec/2024 08:02:39] "GET /webui/ HTTP/1.0" 404 2342
+Not Found: /favicon.ico
+[10/Dec/2024 08:03:42] "GET /favicon.ico HTTP/1.0" 404 2357
+Not Found: /geoserver/web/
+[10/Dec/2024 08:04:09] "GET /geoserver/web/ HTTP/1.0" 404 2366
+Not Found: /
+[10/Dec/2024 08:07:55] "GET / HTTP/1.0" 404 2306
+Not Found: /
+[10/Dec/2024 08:12:15] "GET / HTTP/1.0" 404 2301
+Not Found: /druid/index.html
+[10/Dec/2024 08:22:06] "GET /druid/index.html HTTP/1.0" 404 2372
+/root/imaigine/image/views.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+December 10, 2024 - 07:54:46
+Django version 5.1.3, using settings 'imaigine.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+
+Watching for file changes with StatReloader
+Not Found: /
+[10/Dec/2024 08:30:38] "GET / HTTP/1.0" 404 2306
+Not Found: /favicon.ico
+[10/Dec/2024 08:30:38] "GET /favicon.ico HTTP/1.0" 404 2357
+Not Found: /
+[10/Dec/2024 08:30:52] "GET / HTTP/1.0" 404 2306
+[10/Dec/2024 08:31:03] "GET /api/image/hello HTTP/1.0" 200 5
+[10/Dec/2024 08:31:04] "GET /api/image/hello HTTP/1.0" 200 5
+/root/imaigine/image/views.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+December 10, 2024 - 08:30:14
+Django version 5.1.3, using settings 'imaigine.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+
+Watching for file changes with StatReloader
+/root/imaigine/image/views.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+December 10, 2024 - 08:40:01
+Django version 5.1.3, using settings 'imaigine.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+
+Watching for file changes with StatReloader
+/root/imaigine/image/views.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+December 10, 2024 - 08:40:08
+Django version 5.1.3, using settings 'imaigine.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+
+Watching for file changes with StatReloader
+/root/imaigine/image/views.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+December 10, 2024 - 08:40:23
+Django version 5.1.3, using settings 'imaigine.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+
+Watching for file changes with StatReloader
+/root/imaigine/image/views.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+December 10, 2024 - 08:40:28
+Django version 5.1.3, using settings 'imaigine.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+
+Watching for file changes with StatReloader
+/root/imaigine/image/views.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+December 10, 2024 - 08:40:39
+Django version 5.1.3, using settings 'imaigine.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+
+Watching for file changes with StatReloader
+/root/imaigine/image/views.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+December 10, 2024 - 08:40:53
+Django version 5.1.3, using settings 'imaigine.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+
+Watching for file changes with StatReloader
+/root/imaigine/image/views.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+December 10, 2024 - 08:41:01
+Django version 5.1.3, using settings 'imaigine.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+
+Watching for file changes with StatReloader
+/root/imaigine/image/views.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+December 10, 2024 - 08:41:06
+Django version 5.1.3, using settings 'imaigine.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+
+Watching for file changes with StatReloader
+/root/imaigine/image/views.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+December 10, 2024 - 08:41:15
+Django version 5.1.3, using settings 'imaigine.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+
+Watching for file changes with StatReloader
+/root/imaigine/image/views.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+December 10, 2024 - 08:41:20
+Django version 5.1.3, using settings 'imaigine.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+
+Watching for file changes with StatReloader
+/root/imaigine/image/views.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+December 10, 2024 - 08:41:50
+Django version 5.1.3, using settings 'imaigine.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+
+Watching for file changes with StatReloader
+/root/imaigine/image/views.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+December 10, 2024 - 08:42:00
+Django version 5.1.3, using settings 'imaigine.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+
+Watching for file changes with StatReloader
+/root/imaigine/image/views.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+December 10, 2024 - 08:42:39
+Django version 5.1.3, using settings 'imaigine.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+
+Watching for file changes with StatReloader
