@@ -31,13 +31,6 @@ def encode_image(image_path):
     with open(image_path, "rb") as image_file:
         return base64.b64encode(image_file.read()).decode('utf-8')
 
-def decode_image(data, filename):
-    image_data = base64.b64decode(data.split(",")[1])
-    temp_image_path = os.path.join(settings.MEDIA_ROOT, filename)
-    with open(temp_image_path, "wb") as f:
-        f.write(image_data)
-    return temp_image_path
-
 def generate_description(base64_image):
     model_name = "gpt-4"
     try:
@@ -107,8 +100,7 @@ def generate_image(image_path, prompt, download_folder):
         print("发生错误：", str(e))
     return new_file_path
 
-
-# Create your views here.
+# "/api/image/generate"
 def generate(request):
     if request.method == "POST":
         image_data = request.POST.get('image')
@@ -139,7 +131,7 @@ def generate(request):
         return response
     return JsonResponse({'error': 'Method Error'}, status=400)
 
-def openai_edit_image(png_path, mask_path, prompt):
+def edit_image(png_path, mask_path, prompt):
     with open(png_path, 'rb') as png_file, open(mask_path, 'rb') as mask_file:
         response = openai.Image.edit(
             image=png_file,
@@ -150,6 +142,14 @@ def openai_edit_image(png_path, mask_path, prompt):
         )
     return response
 
+def decode_image(data, filename):
+    image_data = base64.b64decode(data.split(",")[1])
+    temp_image_path = os.path.join(settings.MEDIA_ROOT, filename)
+    with open(temp_image_path, "wb") as f:
+        f.write(image_data)
+    return temp_image_path
+
+# "/api/image/edit"
 def edit(request):
     if request.method == "POST":
         data = request.POST
@@ -163,7 +163,7 @@ def edit(request):
             mask_path = decode_image(image_data, "temp_mask.png")
 
             # Assuming openai_edit_image is your existing function to call the OpenAI API
-            response = openai_edit_image(png_path, mask_path, prompt)
+            response = edit_image(png_path, mask_path, prompt)
 
             # Download the generated image
             image_url = response['data'][0]['url']
@@ -193,7 +193,7 @@ def edit(request):
             return JsonResponse({"error": "Error generating image"}, status=500)
     return JsonResponse({"error": "Invalid request method"}, status=400)
 
-
+# "/api/image/hello"
 def hello(request):
     if request.method == "GET":
         return HttpResponse("hello", status=200)
