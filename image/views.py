@@ -131,6 +131,9 @@ def generate(request):
         return response
     return JsonResponse({'error': 'Method Error'}, status=400)
 
+
+
+# "/api/image/edit
 def edit_image(png_path, mask_path, prompt):
     with open(png_path, 'rb') as png_file, open(mask_path, 'rb') as mask_file:
         response = openai.Image.edit(
@@ -144,19 +147,19 @@ def edit_image(png_path, mask_path, prompt):
 
 def decode_image(data, filename):
     image_data = base64.b64decode(data.split(",")[1])
-    temp_image_path = os.path.join(settings.MEDIA_ROOT, filename)
+    temp_image_path = os.path.join("media/", filename)
     with open(temp_image_path, "wb") as f:
         f.write(image_data)
     return temp_image_path
 
-# "/api/image/edit"
+
 def edit(request):
     if request.method == "POST":
-        data = request.POST
-        image_data = data.get("image")
-        prompt = data.get("prompt")
-        png_data = data.get("png")
-
+        image_data = request.POST.get("image")
+        prompt = request.POST.get("prompt")
+        png_data = request.POST.get("png")
+        print(image_data)
+        print(prompt)
         try:
             # Handle path and OpenAI API
             png_path = decode_image(png_data, "temp_image.png")
@@ -171,7 +174,7 @@ def edit(request):
             image = Image.open(BytesIO(image_response.content))
 
             # Save the downloaded image
-            downloaded_image_path = os.path.join(settings.MEDIA_ROOT, 'downloaded_image.png')
+            downloaded_image_path = os.path.join("media/", 'downloaded_image.png')
             image.save(downloaded_image_path)
 
             # Clean up temporary files
@@ -192,6 +195,9 @@ def edit(request):
             print(f"Error generating image: {str(e)}")
             return JsonResponse({"error": "Error generating image"}, status=500)
     return JsonResponse({"error": "Invalid request method"}, status=400)
+
+
+
 
 # "/api/image/hello"
 def hello(request):
